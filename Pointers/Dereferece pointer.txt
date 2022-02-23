@@ -1,0 +1,24 @@
+Dereference pointer in C
+
+Dereferencing is a method used to manipulate or access data contained in a 
+memory location that it is pointed to by a pointer. Asterisk (*) is used 
+along with a pointer variable to dereference a pointer variable; it refers
+ to a variable that is being pointed. Hence it is called dereferencing of a 
+pointer. Dereferencing operator in the C programming is also known as 
+indirection pointer, and as we know, it operates only on pointer variable. 
+It returns the location value or, as you call l-value, present in the memory 
+pointed to by the variable’s value. When an indirection pointer is used 
+along with a pointer, it is known as dereferencing the pointer. It is used 
+when any operations are applied to a dereferenced pointer that will 
+directly affect the value of the variable that the pointer points to.
+
+Dereference operation begins at the pointer, and it then follows the 
+arrow over to access its pointee, that is, the value it is referencing to. 
+The goal may be to look at the pointee or to change the pointee state. 
+The dereference operation on a pointer only works if the pointer has a 
+pointee; else, it will be terminated and show an error.
+
+The pointee must be allocated, and then the pointer must be set to point
+ the pointee. Sometimes the pointer code might forget to set up pointee; 
+this is a frequent error that misleads a programmer most often and creates 
+an error.

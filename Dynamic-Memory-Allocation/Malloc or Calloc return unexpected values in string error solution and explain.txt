@@ -1,0 +1,9 @@
+You don't null terminate the buffer. Therefore strcpy wil just copy the contents of buf until null character in encountered which is undefind behaviour.
+
+Add this right after the forloop:
+
+buf[j] = 0;
+Also in malloc((nextsize) * sizeof(char)), nextsize doesn't include the null character. Actually you don't need nextsizeat all, because it just mirrors j. So you should just have:
+
+char* disemvoweStr = malloc(j + 1);
+BTW, the (char*) cast is not needed, and sizeof(char) is 1 by definition.
